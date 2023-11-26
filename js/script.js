@@ -7,15 +7,17 @@ document.getElementById("change-colour").addEventListener("click", function() {
 document.getElementById("change-colour").addEventListener("click", function() {
     document.getElementById("model-info").style.display = "block";
 });
+ */
+
 
 // example with multiple models
-var myModels = ["/models/orange.glb", "/models/teal.glb", "/models/orange.glb", "/models/teal.glb",]
+var sofa = ["./models/sofa-style1.glb","./models/sofa-style2.glb", "./models/sofa-style3.glb",]
 var counter = 0;
-document.getElementById("change-colour").addEventListener("click", function() {
+document.getElementById("change-fabric").addEventListener("click", function() {
     counter++;
     if (counter==3) { 
         counter = 0;
     }
-    document.getElementById("model").src = myModels[counter];
+    document.getElementById("sofa").src = sofa[counter];
 });
- */
+

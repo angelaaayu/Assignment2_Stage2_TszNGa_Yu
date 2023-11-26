@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LuxeLiving</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+</head>
+<body>
+
+
+
+    <div class="productgrid">
+
+
+        <div>
+            <h3 id="model-name">SerenityDream Sofa</h3>
+
+            <model-viewer src="./models/cabinet-style1.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.webp" shadow-intensity="1.21" exposure="0.91">
+                <button class="Hotspot" slot="hotspot-1" data-position="0.03509111477089843m 0.48263757134564345m 0.1675334382972534m" data-normal="0.37210815024134725m -0.02059549327606432m 0.9279608559528136m" data-visibility-attribute="visible">
+                    <div class="HotspotAnnotation">metal</div>
+                </button><button class="Hotspot" slot="hotspot-2" data-position="-0.2304791315205161m 0.262296605718444m 0.2760916566228558m" data-normal="-0.17648127002804745m 0.5000146108455452m 0.8478441780600168m" data-visibility-attribute="visible">
+                    <div class="HotspotAnnotation">taliar made colour</div>
+                </button>
+                <div class="progress-bar hide" slot="progress-bar">
+                    <div class="update-bar"></div>
+                </div>
+                <button slot="ar-button" id="ar-button">
+                    View in your space
+                </button>
+                <div id="ar-prompt">
+                    <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
+                </div>
+            </model-viewer>
+            
+
+        <div id="model-info">
+            Info about the model
+        </div>
+
+    </div>
+    
+</body>
+<script src="js/script.js"></script>
+</html>

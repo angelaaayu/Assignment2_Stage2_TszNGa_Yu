@@ -4,119 +4,149 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LuxeLiving</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="./css/styles.css">
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 </head>
 <body>
 
     <header>
-        <h3>LuxeLiving</h3>
+        <h1>LuxeLiving</h1>
         <nav>
-            <ul>
+            <ol>
                 <li>Home</li>
                 <li>Furniture</li>
-            </ul>
+            </ol>
         </nav>
     </header>
 
+    <main>
 
+        <div class="carousel-container">
+            <div class="slide" id="slide1">
+              <!-- Content for Slide 1 -->
+              <img src="./img/Set1_Hero.png" alt="Slide 1">
+            </div>
+            <div class="slide" id="slide2">
+              <!-- Content for Slide 2 -->
+              <img src="./img/Set2_Hero.png" alt="Slide 2">
+            </div>
+            <div class="slide" id="slide3">
+              <!-- Content for Slide 3 -->
+              <img src="./img/Set3_Hero.png" alt="Slide 3">
+            </div>
+          </div>
 
-    <div class="productgrid">
+        <div class="productgrid-sofa">
 
-        <div>
-            <h3 id="model-name">SerenityDream Sofa</h3>
+            <div>
+                <model-viewer id="sofa" camera-controls touch-action="pan-y" camera-controls alt="SerenityDream Sofa" src="./models/sofa-style1.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.webp" shadow-intensity="1.21" exposure="0.91">
+                    
+                    <button id="sofa-fabric" class="Hotspot" slot="hotspot-1" data-position="-0.20214071862395122m 0.8028212767600439m -0.17220573038976347m" data-normal="-0.36566490407312974m 0.01690225660379746m 0.9305930859677007m" data-visibility-attribute="visible">
+                        <div class="HotspotAnnotation">Tailor Made Fabric</div>
+                    </button><button class="Hotspot" slot="hotspot-2" data-position="-1.2880756013003805m 0.1584413100387957m 0.06119260843152691m" data-normal="-0.28330973291572104m 0.3466743008483583m 0.8941770095269308m" data-visibility-attribute="visible">
+                        <div class="HotspotAnnotation">Wood</div>
+                    </button><button class="Hotspot" slot="hotspot-3" data-position="1.0253248462560345m 0.012120208300049423m 0.825834343758578m" data-normal="-0.3074400100940785m 0.3370011388026514m 0.8898937423305487m" data-visibility-attribute="visible">
+                        <div class="HotspotAnnotation">Gold Plated</div>
+                    </button>
 
-            <model-viewer id="sofa" src="./models/sofa-style1.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.webp" shadow-intensity="1.21" exposure="0.91" auto-rotate camera-orbit="-92.76deg 84.72deg 5.843m" field-of-view="30deg">
-                <button id="change-fabric" class="Hotspot" slot="hotspot-1" data-position="-0.20214071862395122m 0.8028212767600439m -0.17220573038976347m" data-normal="-0.36566490407312974m 0.01690225660379746m 0.9305930859677007m" data-visibility-attribute="visible">
-                    <div class="HotspotAnnotation">Tailor Made Fabric</div>
-                </button><button class="Hotspot" slot="hotspot-2" data-position="-1.2880756013003805m 0.1584413100387957m 0.06119260843152691m" data-normal="-0.28330973291572104m 0.3466743008483583m 0.8941770095269308m" data-visibility-attribute="visible">
-                    <div class="HotspotAnnotation">Wood</div>
-                </button><button class="Hotspot" slot="hotspot-3" data-position="1.0253248462560345m 0.012120208300049423m 0.825834343758578m" data-normal="-0.3074400100940785m 0.3370011388026514m 0.8898937423305487m" data-visibility-attribute="visible">
-                    <div class="HotspotAnnotation">Gold Plated</div>
-                </button>
-            </model-viewer>
-            
+                </model-viewer>
 
-            <div id="model-info">
-                <h5 id="productfeature">Product Feature</h5>
+            </div>
+
+            <div>
+                <h1 id="model-name">SerenityDream Sofa</h1>
+                <h1 id="price">$1,299</h1>
+
+                <p>A harmonious blend of comfort and style. This elegant sofa is crafted to elevate your living space, providing a sanctuary for relaxation and contemporary design. With plush cushions and a sleek silhouette, the SerenityDream Sofa invites you to unwind in luxury. The perfect focal point for modern interiors, its timeless design seamlessly integrates into any home, creating a serene ambiance. Immerse yourself in comfort and sophistication with the SerenityDream Sofa – where every moment becomes a tranquil retreat.</p>
+
+                <div class="controls">
+                    <div>Styles: 
+                        <select id="variant-sofa">
+                            <option value="style1">Style 1</option>
+                            <option value="style2">Style 2</option>
+                            <option value="style3">Style 3</option>
+                        </select>
+                    </div>
+                </div>
                 
-                    Plush Comfort: Sink into relaxation with the SerenityDream Sofa's generously cushioned seats and soft upholstery, providing an inviting and cozy seating experience.
+                <img id="product-image" src="./img/Set1_Sofa.png" alt="">
+                <img id="product-image" src="./img/Set1_Sofa.png" alt="">
+                <img id="product-image" src="./img/Set1_Sofa.png" alt="">
 
-                    Contemporary Design: The sleek silhouette and modern design make it a versatile addition to any room, seamlessly blending with various interior styles.
+            </div>
 
-                    Durable Construction: Built with a sturdy hardwood frame, the SerenityDream Sofa ensures long-lasting durability, supporting both comfort and stability.
 
-                    Choice of Fabrics: Customize your sofa to suit your taste with our selection of premium fabrics, offering both durability and a touch of luxury.
+        
+        </div>
 
-                    Ample Seating: The spacious design of the SerenityDream Sofa provides ample seating for family and friends, making it perfect for gatherings and movie nights.
+        <div class="productgrid-cabinet">
+            <div>
+                <h2 id="model-name">ModernHaven Cabinet</h2>
 
-                    Easy Maintenance: Designed for convenience, the sofa's upholstery is easy to clean and maintain, ensuring a hassle-free ownership experience.
+                <model-viewer src="./models/sofa-style1.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.webp" shadow-intensity="1.21" exposure="0.91" auto-rotate camera-orbit="-92.76deg 84.72deg 5.843m" field-of-view="30deg">
+                    <button class="Hotspot" slot="hotspot-1" data-position="-0.20214071862395122m 0.8028212767600439m -0.17220573038976347m" data-normal="-0.36566490407312974m 0.01690225660379746m 0.9305930859677007m" data-visibility-attribute="visible">
+                        <div class="HotspotAnnotation">Tailor Made Fabric</div>
+                    </button><button class="Hotspot" slot="hotspot-2" data-position="-1.2880756013003805m 0.1584413100387957m 0.06119260843152691m" data-normal="-0.28330973291572104m 0.3466743008483583m 0.8941770095269308m" data-visibility-attribute="visible">
+                        <div class="HotspotAnnotation">Wood</div>
+                    </button><button class="Hotspot" slot="hotspot-3" data-position="1.0253248462560345m 0.012120208300049423m 0.825834343758578m" data-normal="-0.3074400100940785m 0.3370011388026514m 0.8898937423305487m" data-visibility-attribute="visible">
+                        <div class="HotspotAnnotation">Gold Plated</div>
+                    </button>
+                </model-viewer>
                 
+
+                <div id="model-info">
+                    <p>Quality Craftsmanship: The WoodCraft Harmony Cabinet is meticulously crafted from premium wood, showcasing exquisite attention to detail and fine craftsmanship.
+
+                        Versatile Storage: With ample interior space and adjustable shelves, this cabinet offers versatile storage options for organizing your belongings with ease.
+                        
+                        Natural Elegance: The rich wood finish adds a touch of natural elegance to any room, creating a warm and inviting atmosphere.
+                        
+                        Durable Construction: Built to last, the cabinet features a sturdy construction, ensuring durability and longevity in your home.
+                        
+                        Classic Design: The timeless design of the WoodCraft Harmony Cabinet complements various decor styles, making it a versatile and enduring addition to your living space.
+                        
+                        Functional and Stylish: Designed for both functionality and style, this cabinet seamlessly combines practical storage with a sophisticated aesthetic.</p>
+                </div>
             </div>
         </div>
 
-        <div>
-            <h3 id="model-name">ModernHaven Cabinets</h3>
+        <div class="productgrid-table">
+            <div>
+                <h2 id="model-name">ZenithCraft Coffee Table</h2>
 
-            <model-viewer src="./models/sofa-style1.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.webp" shadow-intensity="1.21" exposure="0.91" auto-rotate camera-orbit="-92.76deg 84.72deg 5.843m" field-of-view="30deg">
-                <button class="Hotspot" slot="hotspot-1" data-position="-0.20214071862395122m 0.8028212767600439m -0.17220573038976347m" data-normal="-0.36566490407312974m 0.01690225660379746m 0.9305930859677007m" data-visibility-attribute="visible">
-                    <div class="HotspotAnnotation">Tailor Made Fabric</div>
-                </button><button class="Hotspot" slot="hotspot-2" data-position="-1.2880756013003805m 0.1584413100387957m 0.06119260843152691m" data-normal="-0.28330973291572104m 0.3466743008483583m 0.8941770095269308m" data-visibility-attribute="visible">
-                    <div class="HotspotAnnotation">Wood</div>
-                </button><button class="Hotspot" slot="hotspot-3" data-position="1.0253248462560345m 0.012120208300049423m 0.825834343758578m" data-normal="-0.3074400100940785m 0.3370011388026514m 0.8898937423305487m" data-visibility-attribute="visible">
-                    <div class="HotspotAnnotation">Gold Plated</div>
-                </button>
-            </model-viewer>
+                <model-viewer src="./models/sofa-style1.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.webp" shadow-intensity="1.21" exposure="0.91" auto-rotate camera-orbit="-92.76deg 84.72deg 5.843m" field-of-view="30deg">
+                    <button class="Hotspot" slot="hotspot-1" data-position="-0.20214071862395122m 0.8028212767600439m -0.17220573038976347m" data-normal="-0.36566490407312974m 0.01690225660379746m 0.9305930859677007m" data-visibility-attribute="visible">
+                        <div class="HotspotAnnotation">Tailor Made Fabric</div>
+                    </button><button class="Hotspot" slot="hotspot-2" data-position="-1.2880756013003805m 0.1584413100387957m 0.06119260843152691m" data-normal="-0.28330973291572104m 0.3466743008483583m 0.8941770095269308m" data-visibility-attribute="visible">
+                        <div class="HotspotAnnotation">Wood</div>
+                    </button><button class="Hotspot" slot="hotspot-3" data-position="1.0253248462560345m 0.012120208300049423m 0.825834343758578m" data-normal="-0.3074400100940785m 0.3370011388026514m 0.8898937423305487m" data-visibility-attribute="visible">
+                        <div class="HotspotAnnotation">Gold Plated</div>
+                    </button>
+                </model-viewer>
+                
+
+                <div id="model-info">
+                    <p>
+                        Sleek Design: The UrbanBlend Coffee Table boasts a contemporary and sleek design, adding a touch of sophistication to your living room.
+
+                        Quality Materials: Crafted with high-quality materials, the table features a durable tabletop and sturdy legs, ensuring both style and longevity.
+
+                        Versatile Functionality: With a spacious surface, the coffee table is ideal for displaying decor, holding drinks, or even serving snacks, making it a versatile and practical addition to your home.
+
+                        Neutral Palette: The neutral color palette of the UrbanBlend Coffee Table allows for easy integration into various interior design schemes, providing a seamless fit with your existing furniture.
+
+                        Easy Assembly: Designed with convenience in mind, the table is easy to assemble, allowing you to enjoy its benefits in your space without any hassle.
+
+                        Compact Size: Perfect for both large and smaller spaces, the compact size of the coffee table makes it adaptable to different room layouts.
+                    </p>
+                </div>
+            </div>
             
 
-            <div id="model-info">
-                <p>Quality Craftsmanship: The WoodCraft Harmony Cabinet is meticulously crafted from premium wood, showcasing exquisite attention to detail and fine craftsmanship.
-
-                    Versatile Storage: With ample interior space and adjustable shelves, this cabinet offers versatile storage options for organizing your belongings with ease.
-                    
-                    Natural Elegance: The rich wood finish adds a touch of natural elegance to any room, creating a warm and inviting atmosphere.
-                    
-                    Durable Construction: Built to last, the cabinet features a sturdy construction, ensuring durability and longevity in your home.
-                    
-                    Classic Design: The timeless design of the WoodCraft Harmony Cabinet complements various decor styles, making it a versatile and enduring addition to your living space.
-                    
-                    Functional and Stylish: Designed for both functionality and style, this cabinet seamlessly combines practical storage with a sophisticated aesthetic.</p>
-            </div>
         </div>
 
-        <div>
-            <h3 id="model-name">ZenithCraft Coffee Table</h3>
-
-            <model-viewer src="./models/sofa-style1.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.webp" shadow-intensity="1.21" exposure="0.91" auto-rotate camera-orbit="-92.76deg 84.72deg 5.843m" field-of-view="30deg">
-                <button class="Hotspot" slot="hotspot-1" data-position="-0.20214071862395122m 0.8028212767600439m -0.17220573038976347m" data-normal="-0.36566490407312974m 0.01690225660379746m 0.9305930859677007m" data-visibility-attribute="visible">
-                    <div class="HotspotAnnotation">Tailor Made Fabric</div>
-                </button><button class="Hotspot" slot="hotspot-2" data-position="-1.2880756013003805m 0.1584413100387957m 0.06119260843152691m" data-normal="-0.28330973291572104m 0.3466743008483583m 0.8941770095269308m" data-visibility-attribute="visible">
-                    <div class="HotspotAnnotation">Wood</div>
-                </button><button class="Hotspot" slot="hotspot-3" data-position="1.0253248462560345m 0.012120208300049423m 0.825834343758578m" data-normal="-0.3074400100940785m 0.3370011388026514m 0.8898937423305487m" data-visibility-attribute="visible">
-                    <div class="HotspotAnnotation">Gold Plated</div>
-                </button>
-            </model-viewer>
-            
-
-            <div id="model-info">
-                <p>
-                    Sleek Design: The UrbanBlend Coffee Table boasts a contemporary and sleek design, adding a touch of sophistication to your living room.
-
-                    Quality Materials: Crafted with high-quality materials, the table features a durable tabletop and sturdy legs, ensuring both style and longevity.
-
-                    Versatile Functionality: With a spacious surface, the coffee table is ideal for displaying decor, holding drinks, or even serving snacks, making it a versatile and practical addition to your home.
-
-                    Neutral Palette: The neutral color palette of the UrbanBlend Coffee Table allows for easy integration into various interior design schemes, providing a seamless fit with your existing furniture.
-
-                    Easy Assembly: Designed with convenience in mind, the table is easy to assemble, allowing you to enjoy its benefits in your space without any hassle.
-
-                    Compact Size: Perfect for both large and smaller spaces, the compact size of the coffee table makes it adaptable to different room layouts.
-                </p>
-            </div>
-        </div>
-
-    </div>
+    </main>
     
 </body>
-<script src="js/script.js"></script>
+<script src="./js/script.js"></script>
 </html>

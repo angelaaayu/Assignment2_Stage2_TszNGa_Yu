@@ -1,22 +1,101 @@
-.Hotspot {
-    background-color: #ffffff;
-    color: rgb(9, 47, 34);
-    border-radius: 3px;
-    padding: 3px;
+@import url('https://fonts.googleapis.com/css2?family=Rufina:wght@400;700&display=swap');
+
+
+html{
+    font-family: 'Rufina', serif;
 }
-.larger-example {
-    width: 600px;
-    height: 500px;
-    background-color: rgb(208, 198, 182);
+main{
+    margin: 5%;
 }
-#model-info {
+
+header{
+    display: flex;
+    color: rgb(41, 41, 41);
+    margin: 0;
+    justify-content: space-between;
+    margin-left: 2%;
+
+}
+
+header nav{
+    display: inline-block;
+    height: 80px;
+    color: #222222;
+    margin: 0;
+    margin-right: 25px;
+}
+
+nav ol li{
+    display: inline-block;
+    margin: 5px 25px 0 0;
+}
+
+.carousel-container {
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
+}
+  
+.slide {
     display: none;
+    text-align: center;
 }
-.visible {
+  
+img {
+    width: 100%;
+    height: auto;
+}
+
+.Hotspot{
     display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: #FFFFFF;
+    box-sizing: border-box;
+}
+
+.HotspotAnnotation{
+    display: none;
+    background-color: #ffffff;
+    position: absolute;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+
+}
+
+.Hotspot:hover >.HotspotAnnotation{
+    display: block;
+}
+
+.visible {
+    display: inline-block;
 }
 
 model-viewer{
     width: 600px;
-    height: 500px;
+    height: 600px;
+    background-color: rgb(41, 41, 41);
+}
+
+.productgrid-sofa, .productgrid-cabinet, .productgrid-table{
+    display: flex;
+    gap: 30px;
+}
+
+#price{
+    text-align: right;
+    margin-right: 30px;
+}
+
+#product-image{
+    margin-top: 5%;
+    width: 200px;
+}
+
+#product-image:hover{
+    z-index: 0;
+    scale: 200%;
 }

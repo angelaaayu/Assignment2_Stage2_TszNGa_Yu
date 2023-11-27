@@ -4,36 +4,34 @@
 html{
     font-family: 'Rufina', serif;
 }
+
+body{
+    margin: 0;
+}
+
+
 main{
     margin: 5%;
 }
 
 header{
-    display: flex;
     color: rgb(41, 41, 41);
     margin: 0;
-    justify-content: space-between;
     margin-left: 2%;
-
+    text-align: center;
 }
 
-header nav{
-    display: inline-block;
-    height: 80px;
-    color: #222222;
-    margin: 0;
-    margin-right: 25px;
+header h1{
+    font-size: 2rem;
+    font-weight: 700;
 }
 
-nav ol li{
-    display: inline-block;
-    margin: 5px 25px 0 0;
-}
+
 
 .carousel-container {
-    width: 100%;
     overflow: hidden;
     margin: 0;
+    padding: 0;
 }
   
 .slide {
@@ -52,7 +50,7 @@ img {
     height: 20px;
     border-radius: 10px;
     border: none;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     box-sizing: border-box;
 }
 
@@ -77,12 +75,13 @@ img {
 model-viewer{
     width: 600px;
     height: 600px;
-    background-color: rgb(41, 41, 41);
+    /* background-color: rgb(41, 41, 41); */
 }
 
-.productgrid-sofa, .productgrid-cabinet, .productgrid-table{
+.productgrid{
     display: flex;
     gap: 30px;
+    margin-bottom: 3rem;
 }
 
 #price{
@@ -98,4 +97,27 @@ model-viewer{
 #product-image:hover{
     z-index: 0;
     scale: 200%;
+}
+
+.controls{
+    padding-top: 0.5rem;
+}
+
+select, option{
+    font-family: 'Rufina', serif;
+}
+
+select{
+    padding: 10px;
+}
+
+#match-image{
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    padding: 0;
+}
+
+#product-image{
+    padding: 0;
+    margin: 0;
 }

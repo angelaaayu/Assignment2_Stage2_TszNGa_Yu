@@ -1,26 +1,3 @@
-/* // simple change model
-document.getElementById("change-colour").addEventListener("click", function() {
-    document.getElementById("model").src = "/models/teal.glb";
-}); */
-
-/* // example with showing content
-document.getElementById("sofa-fabric").addEventListener("click", function() {
-    document.getElementById("model-info-sofa-fabric").style.display = "block";
-});
- */
-
-
-// example with multiple models
-/* var sofa = ["./models/sofa-style1.glb","./models/sofa-style2.glb", "./models/sofa-style3.glb",]
-var counter = 0;
-document.getElementById("change-fabric").addEventListener("click", function() {
-    counter++;
-    if (counter==3) { 
-        counter = 0;
-    }
-    document.getElementById("sofa").src = sofa[counter];
-}); */
-
 let currentSlide = 0;
 showSlide(currentSlide);
 
@@ -104,7 +81,7 @@ updateModelSource("coffeetable", selectedOption);
       const currentOrbitIndex = orbitCycle.indexOf(modelViewer.cameraOrbit);
       modelViewer.cameraOrbit =
           orbitCycle[(currentOrbitIndex + 1) % orbitCycle.length];
-    }, 3000);
+    }, 5000);
 })();
 
 
@@ -120,7 +97,7 @@ updateModelSource("coffeetable", selectedOption);
       const currentOrbitIndex = orbitCycle.indexOf(modelViewer.cameraOrbit);
       modelViewer.cameraOrbit =
           orbitCycle[(currentOrbitIndex + 1) % orbitCycle.length];
-    }, 3000);
+    }, 5000);
 })();
 
 (() => {
@@ -134,5 +111,5 @@ updateModelSource("coffeetable", selectedOption);
       const currentOrbitIndex = orbitCycle.indexOf(modelViewer.cameraOrbit);
       modelViewer.cameraOrbit =
           orbitCycle[(currentOrbitIndex + 1) % orbitCycle.length];
-    }, 3000);
+    }, 5000);
 })();
